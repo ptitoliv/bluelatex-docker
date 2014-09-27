@@ -1,7 +1,7 @@
 # Pre-requisites
 
 \BlueLatex needs two parameters to be set :
-  * Public IP: This IP is used for generating \BlueLatex URL used for mail notifications.
+  * Public Host : This parametere is used for generating \BlueLatex URL used for mail notifications. Must be the IP or FQDN of the host system.
   * Mail Server : \BlueLatex needs a mail server for registration and notification mails.
 
 # Running Docker images
@@ -20,5 +20,5 @@ system.
 To run the docker image, execute the following command : 
 
 ```shell
-docker run -p 8080:8080 -e PUBLIC_IP=<PUBLIC_IP_OR_FQDN> -e MAIL_SERVER=<MAIL_SERVER_IP_OR_FQDN> -d ptitoliv/bluelatex:centos7
+docker run -p 8080:8080 -e PUBLIC_HOST=<PUBLIC_IP_OR_FQDN> -e MAIL_SERVER=<MAIL_SERVER_IP_OR_FQDN> -d ptitoliv/bluelatex:centos7
 ```
