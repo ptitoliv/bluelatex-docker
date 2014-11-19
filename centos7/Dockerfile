@@ -5,7 +5,7 @@ RUN yum -y clean metadata
 RUN yum -y install epel-release-7-2.noarch.rpm
 RUN yum -y update
 RUN rm -Rf epel-release-7-2.noarch.rpm
-RUN yum -y install http://ares.ptitoliv.net/bluelatex/bluelatex-1.0.2-1.el7.centos.x86_64.rpm
+RUN yum -y install http://ares.ptitoliv.net/bluelatex/bluelatex-1.0.3-1.el7.centos.x86_64.rpm
 ADD run.sh /run.sh
 ADD application.conf /etc/bluelatex/org.gnieh.blue.common/application.conf
 
